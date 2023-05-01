@@ -74,7 +74,7 @@ a{
 .homeAssets .homeBtn {
    display: flex;
    align-items: center;
-   gap: 50px;
+   gap: 100px;
    justify-content: center;
 }
 
@@ -107,7 +107,7 @@ a{
     border-bottom: 2px solid #fff;
 }
 .mintBtn {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 
@@ -136,7 +136,7 @@ a{
 
 .litePaper {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 170px;
 }
 
 
