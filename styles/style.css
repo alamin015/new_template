@@ -2,9 +2,68 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background: #0D0800;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     width: 98%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/********************************
+**Home section css code
+*********************************/
+
+.homeContent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeAssets {
+    text-align: center;
+}
+.homeAssets img {
+    max-width: 256px;
+    max-height: 256px;
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.homeAssets .domain {
+    font-size: 60px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+
+.homeAssets .blockChains {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 500;
+    margin: 40px 0;
+}
+
+.homeAssets .homeBtn button {
+    padding: 9px 50px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s;
+    letter-spacing: 4px;
+}
+.homeAssets .homeBtn button:hover {
+    background: #fff;
+    color: #0D0800;
+    cursor: pointer;
+}
+.homeAssets .homeBtn button:first-child {
+    margin-right: 20px;
 }
