@@ -14,9 +14,11 @@
     margin: 0 auto;
 }
 section {
-    padding: 50px 0;
+    padding: 80px 0;
 }
-
+a{
+    text-decoration: none;
+}
 .btn {
     padding: 9px 50px;
     border: 2px solid #fff;
@@ -26,6 +28,11 @@ section {
     font-weight: 500;
     transition: all 0.3s;
     letter-spacing: 4px;
+}
+.btn:hover {
+    color: #0D0800;
+    background: #fff;
+    cursor: pointer;
 }
 /********************************
 **Home section css code
@@ -64,14 +71,11 @@ section {
     font-weight: 500;
     margin: 40px 0;
 }
-
-.homeAssets .homeBtn button:hover {
-    background: #fff;
-    color: #0D0800;
-    cursor: pointer;
-}
-.homeAssets .homeBtn button:first-child {
-    margin-right: 20px;
+.homeAssets .homeBtn {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   justify-content: center;
 }
 
 /********************************
@@ -104,11 +108,89 @@ section {
     border-bottom: 2px solid #fff;
 }
 .mintBtn {
-
     margin-top: 20px;
 }
-.mintBtn:hover {
-    background: #fff;
-    color: #0D0800;
-    cursor: pointer;
+
+
+/********************************
+**Feature section css code
+*********************************/
+.featureContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.featureContent .featureItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.featureItem p {
+    color: #fff;
+    font-weight: 500px;
+    font-size: 26px;
+    border-bottom: 3px solid #fff;
+}
+
+.litePaper {
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+/********************************
+**Footer css code
+*********************************/
+
+#footer {
+    padding: 80px 0;
+}
+
+.footerContent {
+    text-align: center;
+}
+.footerContent a img {
+    width: 150px;
+    margin: 0 auto;
+}
+.footerContent .copyRight {
+    margin: 30px 0;
+}
+.footerContent .copyRight,.footerContent .copyRight a{
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+}
+.footerContent .copyRight a:hover{
+    text-decoration: underline;
+    color: #dfc08e;
+}
+.footerContent .privacy {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footerContent .privacy:hover {
+    color: #dfc08e;
+}
+
+/********************************
+**Responsive css code
+*********************************/
+@media only screen and (max-width: 668px) {
+    .mintContent .mintList {
+        margin: 25px auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .homeAssets .homeBtn{
+        flex-direction: column;
+    }
 }
